@@ -8,7 +8,7 @@ namespace Header_Reader.Interfaces
     {
         void SetHeadBody();
         HtmlDocument GetHtmlDocument(string html);
-        Dictionary<string, int> findingWord();
+        Dictionary<string, int> FindingWord();
         void SetKeywords();
     }
 }

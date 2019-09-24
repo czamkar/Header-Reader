@@ -17,10 +17,10 @@ namespace Header_Reader
 
         public HtmlAnalyzer(string url)
         {
-            setUri(url);
+            SetUri(url);
             SetHeadBody();
         }
-        private Uri setUri(string url)
+        private Uri SetUri(string url)
         {
                 uri = new Uri(url);
                 return uri;
@@ -64,7 +64,7 @@ namespace Header_Reader
             browser.Refresh();
             return browser.Document;
         }
-        public Dictionary<string, int> findingWord()
+        public Dictionary<string, int> FindingWord()
         {
             Dictionary<string, int> res = new Dictionary<string, int>();
             foreach (var item in keyWordsArray)
